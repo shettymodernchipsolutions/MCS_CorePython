@@ -1,0 +1,59 @@
+a = {1,4,2.4,'aaa','abc',9,2} #<-- Using Curly Brackets
+b = set([1,4,3,'abc',87]) #<-- Using Set Constructor
+c = set()
+print(a,"\n")
+print(b,"\n")
+print(c,"\n")
+print(len(a),"\n")
+
+a = {1,2,'aaa',3.6,'abc',7.8}
+print(len(a),"\n") #Finding length of a Set
+
+a = {1,2,'aaa',3.6,'abc',7.8} #Accessing Elements of a Set
+for x in a:
+    print(x)
+
+a = {1,2,'aaa',3.6,'abc',7.8}
+a.add(4)  #Add function
+print("\n",a,"\n")
+a.update([3,'bcd',4.9]) #Update function
+print(a,"\n")
+
+a = {1,2,'aaa',3.6,'abc',7.8}
+print(a,"\n")
+a.remove('abc') #Remove function
+print(a,"\n")
+
+a = {1,2,'aaa',3.6,'abc',7.8}
+print(a,"\n")
+a.discard(2) #Discard function
+print(a,"\n")
+
+a = {1,2,'aaa',3.6,'abc',7.8}
+print(a,"\n")
+a.pop() #Pop function
+print(a,"\n")
+
+a = {1,2,4.6,7.8,'r','s'}
+b = {2,5,'d','abc'}
+print(a|b,"\n") #Pipeline
+
+a = {1,2,4.6,7.8,'r','s'}
+b = {2,5,'d','abc'}
+print("Set a U b = ",a.union(b),"\n") #Concatenation
+
+a = {1,2,4.6,7.8,'r','s'}
+b = {2,5,'d','abc'}
+print(a&b,"\n")   #Intersection using '&' symbol
+print("Set a intersection b = ", a.intersection(b),"\n") #Using intersection()
+
+a = {2,4,9,'abc'}
+b = {1,4,'abc',87}
+c = {2,3,'abc'}
+print(a-b,"\n")  #Difference using '-' symbol
+print(b-a,"\n")  #Difference using '-' symbol
+print("Set a intersection b = ",a.difference(b,c),"\n")  ##Difference using difference()
+
+a = {1,2,5,4.6,7.8,'r','s'}
+b = frozenset(a) #frozenset() restrict modifying the data
+print(b,"\n")
